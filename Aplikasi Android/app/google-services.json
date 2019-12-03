@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "366526935281",
+    "firebase_url": "https://bayars-53bb2.firebaseio.com",
+    "project_id": "bayars-53bb2",
+    "storage_bucket": "bayars-53bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366526935281:android:8dad0e194967d3c6",
+        "android_client_info": {
+          "package_name": "com.example.bayars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366526935281-g782qrak27udhl5mgd259k9fehen5vq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bayars",
+            "certificate_hash": "52019e0f8cec9db708895dc419e6213a819548d8"
+          }
+        },
+        {
+          "client_id": "366526935281-d71e2km6kneqv56d87j6ha0va9qk9iui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt0P3ID1GUvLtlQTsRGrN69kx_Kcj5mUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366526935281-d71e2km6kneqv56d87j6ha0va9qk9iui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

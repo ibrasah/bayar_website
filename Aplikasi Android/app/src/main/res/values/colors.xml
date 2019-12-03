@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryy">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#EE7168</color>
+
+    <color name="btn_presed">#666666</color>
+    <color name="btn_unpresed">#999999</color>
+
+    <color name="btn_presed2">#979797</color>
+    <color name="btn_unpresed2">#DDDDDD</color>
+
+    <!-- Warna Desain Biru -->
+    <color name="biruDesain">#A3D4F7</color>
+
+    <color name="grey_bg">#EBEFF0</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_text">#222D31</color>
+    <color name="me_chat_bg">#FFE0B2</color>
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+
+    <color name="warning">#ff9933</color>
+    <color name="error">#8b0000</color>
+    <color name="info">#000080</color>
+    <color name="success">#009688</color>
+
+    <color name="text_orange">#F08D17</color>
+    <color name="text_biru">#2771E1</color>
+</resources>

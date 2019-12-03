@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="#E9E9E9"
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarshape"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+    />
+
+    <TextView
+            android:id="@+id/halo"
+            android:text="Selamat Datang !"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:paddingStart="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/nama"
+            android:text="ADMIN"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/laporan"
+            android:text="Dashboard PEMBAYARAN Sekolah"
+            android:textColor="#000000"
+            android:layout_below="@+id/nama"
+            android:paddingStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout
+            android:layout_below="@+id/laporan"
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:id="@+id/bg_prof"
+                android:background="@drawable/bg_prof"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="60dp"
+                    android:id="@+id/img_upload"
+                    android:src="@drawable/avatar"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_centerVertical="true"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#008FF7"/>
+
+            <RelativeLayout
+                    android:layout_toEndOf="@id/img_upload"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                <TextView
+                        android:text="Ibra Sahputra"
+                        android:id="@+id/namaadmin"
+                        android:layout_below="@+id/nis"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_marginStart="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:text="Admin 1"
+                        android:id="@+id/status"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/namaadmin"
+                        android:layout_marginStart="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/totalsiswa"
+                android:background="@drawable/bg_total"
+                android:layout_below="@+id/bg_prof"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+            <RelativeLayout
+                    android:id="@+id/total"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/dolar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ProgressBar
+                        android:id="@+id/progressDownload2"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text="TOTAL SISWA"
+                        android:id="@+id/tunggakan"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <RelativeLayout
+                        android:layout_below="@+id/tunggakan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                            android:text="25"
+                            android:textSize="20dp"
+                            android:id="@+id/jumlah"
+                            android:layout_marginStart="20dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_toEndOf="@+id/jumlah"
+                            android:text="Anak"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/aaa"
+                android:background="#E9E9E9"
+                android:layout_below="@+id/totalsiswa"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:id="@+id/konfirmasi"
+                    android:background="@drawable/bg_total"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="90dp">
+                <ImageView
+                        android:src="@drawable/dataspp"
+                        android:id="@+id/dolar2"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                <TextView
+                        android:text="Pembayaran SPP"
+                        android:id="@+id/spp2"
+                        android:layout_below="@+id/dolar2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:background="@drawable/bg_total"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_inputsiswa"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="90dp">
+                <ImageView
+                        android:src="@drawable/datasiswa"
+                        android:id="@+id/dolar3"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:text="Input Data Siswa"
+                        android:layout_below="@+id/dolar3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
